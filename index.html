@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+<button class="create">Create</button>
+  <div id="space"></div>
+    
+    <style>
+      #space{
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.demo{
+  background: lightskyblue;
+  color: black;
+  outline: none;
+  border: 0px;
+  box-shadow: 2px 2px 10px #555;
+  margin: 0px;
+  padding: 4px;
+  padding-top: 24px;
+  font-family: Helvetica;
+}
+.div{
+  display: inline-flex;
+  margin: 6px 8px 6px 8px;
+}
+.heading{
+  position: absolute;
+  background: lightskyblue;
+}
+.close{
+     border-radius: 50px;
+    background: #39464e;
+    color: #ebeef0;
+    border: 2px solid #39464e;
+    cursor: pointer;
+    outline: 0px;
+    font-size: 16px;
+}
+    </style>
+    
+    <script>
+      var create = document.getElementsByTagName("button")[0],
+    space = document.getElementById("space"),
+    //span = document.getElementsByTagName("span")[0],
+    count = 0;
+create.addEventListener("click",function(){
+count++;
+//span.innerHTML = count;
+
+var div = document.createElement("div");
+div.setAttribute("class","div");
+
+var span = document.createElement("span");
+span.setAttribute("class","heading");
+var text = document.createTextNode(" ► Notepad " + count +"  |  ");
+span.appendChild(text);
+
+var button = document.createElement("button");
+button.addEventListener("mousedown",function(){
+div.style.display = "none";
+})
+var close = document.createTextNode("x");
+button.setAttribute("class","close");
+button.appendChild(close);
+span.appendChild(button);
+
+  var c = document.createElement("textarea");
+  c.setAttribute("class", "demo");
+  c.setAttribute("cols", "20");
+  c.setAttribute("rows", "10");
+  
+  div.appendChild(c);div.appendChild(span);
+  space.appendChild(div);
+});
+    </script>
+    
+  </body>
+</html>
