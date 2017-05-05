@@ -5,7 +5,7 @@
     <script src="index.js"></script>
   </head>
   <body>
-<button class="create">Create</button>
-  <div id="space"></div>
+<button class="create btn btn-primary">Create NotePad</button>
+<div id="space"></div>
   </body>
 </html>
