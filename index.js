@@ -1,4 +1,4 @@
-var create = document.getElementsByTagName("button")[0],
+3var create = document.getElementsByTagName("button")[0],
     space = document.getElementById("space"),
     //span = document.getElementsByTagName("span")[0],
     count = 0;
@@ -31,7 +31,7 @@ span.appendChild(button);
   var c = document.createElement("textarea");
   c.setAttribute("autofoucs","autofoucs");
   c.setAttribute("class", "demo");
-  c.setAttribute("cols", "20");
+  c.setAttribute("cols", "30");
   c.setAttribute("rows", "10");
   
   div.appendChild(c);div.appendChild(span);
