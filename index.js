@@ -14,7 +14,7 @@ var text = document.createTextNode("► Notepad " + count +" ");
 span.appendChild(text);
 
 var button = document.createElement("button");
-button.addEventListener("mousedown",function(){
+button.addEventListener("mouseup",function(){
 //div.style.display = "none";
 if(window.confirm("Are you sure you want to delete this Note?")){
 	div.style.display = "none";
