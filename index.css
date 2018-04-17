@@ -1,70 +1,81 @@
-body{
-	padding: 10px;
+body {
+  padding: 10px;
 }
-.title{
+
+.title {
   text-align: center;
 }
-.button{
+
+.button {
   text-align: center;
   margin-bottom: 20px;
 }
+
 .button a.button {
-    display: inline-block;
-    padding: 12px 30px;
-    margin-right: 14px;
-    font-size: 15px;
+  display: inline-block;
+  padding: 12px 30px;
+  margin-right: 14px;
+  font-size: 15px;
   text-decoration: none;
-    font-weight: bold;
-    line-height: 25px;
-    color: #303030;
-    background: #fdfdfd;
-    background: -moz-linear-gradient(top, #fdfdfd 0%, #f2f2f2 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdfdfd), color-stop(100%, #f2f2f2));
-    background: -webkit-linear-gradient(top, #fdfdfd 0%, #f2f2f2 100%);
-    background: -o-linear-gradient(top, #fdfdfd 0%, #f2f2f2 100%);
-    background: -ms-linear-gradient(top, #fdfdfd 0%, #f2f2f2 100%);
-    background: linear-gradient(top, #fdfdfd 0%, #f2f2f2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#f2f2f2',GradientType=0 );
-    border-top: solid 1px #cbcbcb;
-    border-right: solid 1px #b7b7b7;
-    border-bottom: solid 1px #b3b3b3;
-    border-left: solid 1px #b7b7b7;
-    border-radius: 30px;
-    -webkit-box-shadow: 10px 10px 5px #888;
-    -moz-box-shadow: 10px 10px 5px #888;
-    box-shadow: 0px 1px 5px #e8e8e8;
-    -moz-border-radius: 30px;
-    -webkit-border-radius: 30px;
+  font-weight: bold;
+  line-height: 25px;
+  color: #303030;
+  background: #fdfdfd;
+  background: -moz-linear-gradient(top, #fdfdfd 0%, #f2f2f2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdfdfd), color-stop(100%, #f2f2f2));
+  background: -webkit-linear-gradient(top, #fdfdfd 0%, #f2f2f2 100%);
+  background: -o-linear-gradient(top, #fdfdfd 0%, #f2f2f2 100%);
+  background: -ms-linear-gradient(top, #fdfdfd 0%, #f2f2f2 100%);
+  background: linear-gradient(top, #fdfdfd 0%, #f2f2f2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#f2f2f2', GradientType=0);
+  border-top: solid 1px #cbcbcb;
+  border-right: solid 1px #b7b7b7;
+  border-bottom: solid 1px #b3b3b3;
+  border-left: solid 1px #b7b7b7;
+  border-radius: 30px;
+  -webkit-box-shadow: 10px 10px 5px #888;
+  -moz-box-shadow: 10px 10px 5px #888;
+  box-shadow: 0px 1px 5px #e8e8e8;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
 }
+
 #home span {
-    background: transparent url(https://avatars0.githubusercontent.com/u/9951055) 1px 50% no-repeat;
+  background: transparent url(https://avatars0.githubusercontent.com/u/9951055) 1px 50% no-repeat;
   background-size: 20px;
 }
+
 #view-on-github span {
-    background: transparent url(https://phe0nix.github.io/assets/images/octocat-icon.png) 0 50% no-repeat;
+  background: transparent url(https://phe0nix.github.io/assets/images/octocat-icon.png) 0 50% no-repeat;
 }
+
 a.button span {
-    display: block;
-    height: 23px;
-    padding-left: 35px;
+  display: block;
+  height: 23px;
+  padding-left: 35px;
 }
-#space{
+
+#space {
   width: 100%;
   height: 100%;
   margin-top: 20px;
 }
+
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
+
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
-.demo{
+
+.demo {
   background: lightskyblue;
   color: black;
   outline: none;
@@ -75,31 +86,39 @@ a.button span {
   padding: 6px;
   font-family: Helvetica;
 }
-.div{
+
+.div {
   display: inline-flex;
   margin: 6px 8px 6px 8px;
   position: relative;
 }
-.heading{
+
+.heading {
   position: absolute;
   background: #6fb6e2;
   font-weight: 600;
   padding: 2px;
-	left:0;right: 0;
-	border-bottom: 1px solid #333;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #333;
 }
-.close{
-    border-radius: 50px;
-    background: #39464e !important;
-    color: #e6e9eb !important;
-    border: 2px solid #39464e !important;
-    cursor: pointer !important;
-    outline: 0px;
-    padding: 1px 4px !important;
-    opacity: 1 !important;
-    font-size: 16px !important;
+
+div.close {
+  border-radius: 50px;
+  background: #39464e;
+  color: #e6e9eb;
+  border: 2px solid #39464e;
+  cursor: pointer;
+  outline: 0px;
+  padding: 9px 4px;
+  line-height: 0;
+  opacity: 1;
+  font-weight: 400;
+  text-shadow: none;
+  font-size: 15px;
 }
-.close:hover{
-	background: #dc4141 !important;
-	border: 2px solid #dc4141 !important;
+
+div.close:hover {
+  background: #dc4141;
+  border: 2px solid #dc4141;
 }
