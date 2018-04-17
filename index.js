@@ -1,4 +1,4 @@
-3var create = document.getElementsByTagName("button")[0],
+var create = document.getElementsByTagName("button")[0],
     space = document.getElementById("space"),
     //span = document.getElementsByTagName("span")[0],
     count = 0;
