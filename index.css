@@ -103,7 +103,7 @@ a.button span {
   border-bottom: 1px solid #333;
 }
 
-div.close {
+button.close {
   border-radius: 50px;
   background: #39464e;
   color: #e6e9eb;
@@ -118,7 +118,7 @@ div.close {
   font-size: 15px;
 }
 
-div.close:hover {
+button.close:hover {
   background: #dc4141;
   border: 2px solid #dc4141;
 }
