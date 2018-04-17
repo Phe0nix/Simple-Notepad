@@ -118,7 +118,8 @@ button.close {
   font-size: 15px;
 }
 
-button.close:hover {
+.close:focus, .close:hover {
   background: #dc4141;
   border: 2px solid #dc4141;
+  opacity: 1;
 }
